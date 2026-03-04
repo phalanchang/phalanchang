@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="draw.io" modified="2026-03-02T15:00:00.000Z" agent="claude-code-mcp" version="24.0.0" type="device">
   <diagram id="user-perspective-arch" name="User Perspective Architecture">
-    <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="1">
+    <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -87,7 +87,7 @@
         </mxCell>
 
         <!-- DEV Team -->
-        <mxCell id="agent_dev" value="&lt;b&gt;DEV Team&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;開発実装&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor:#FFB3D9;fontColor=#FFFFFF;strokeColor:#FF6B9D;fontSize=10;arcSize=12;" vertex="1" parent="1">
+        <mxCell id="agent_dev" value="&lt;b&gt;DEV Team&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;開発実装&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB3D9;fontColor=#FFFFFF;strokeColor=#FF6B9D;fontSize=10;arcSize=12;" vertex="1" parent="1">
           <mxGeometry x="940" y="240" width="120" height="60" as="geometry"/>
         </mxCell>
 
@@ -102,7 +102,7 @@
         </mxCell>
 
         <!-- Notion連携 -->
-        <mxCell id="system_notion" value="&lt;b&gt;📋 Notion連携&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;タスク管理&lt;br&gt;Notion API&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor:#A4D084;fontColor=#FFFFFF;strokeColor=#70AD47;fontSize=11;arcSize=15;shadow=1;" vertex="1" parent="1">
+        <mxCell id="system_notion" value="&lt;b&gt;📋 Notion連携&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;タスク管理&lt;br&gt;Notion API&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A4D084;fontColor=#FFFFFF;strokeColor=#70AD47;fontSize=11;arcSize=15;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="380" width="280" height="80" as="geometry"/>
         </mxCell>
 
@@ -163,37 +163,37 @@
         </mxCell>
 
         <!-- Reflexio → 各Agent -->
-        <mxCell id="flow_reflexio_pm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_pm" parent="1">
+        <mxCell id="flow_reflexio_pm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_pm" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="flow_reflexio_pl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_pl" parent="1">
+        <mxCell id="flow_reflexio_pl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_pl" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="flow_reflexio_dev" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_dev" parent="1">
+        <mxCell id="flow_reflexio_dev" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_dev" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="flow_reflexio_monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_monitor" parent="1">
+        <mxCell id="flow_reflexio_monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B9D;strokeWidth=1;dashed=1;" edge="1" source="system_reflexio" target="agent_monitor" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- System → Output フロー -->
         <!-- 自動リマインド → Discord -->
-        <mxCell id="flow_reminder_discord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_autoreminder" target="output_discord" parent="1">
+        <mxCell id="flow_reminder_discord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_autoreminder" target="output_discord" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- Notion連携 → Notion出力 -->
-        <mxCell id="flow_notion_out" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_notion" target="output_notion" parent="1">
+        <mxCell id="flow_notion_out" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_notion" target="output_notion" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- Monitor → Discord -->
-        <mxCell id="flow_monitor_discord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_monitor" target="output_discord" parent="1">
+        <mxCell id="flow_monitor_discord" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="system_monitor" target="output_discord" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
         <!-- 実績入力 → Google Calendar -->
-        <mxCell id="flow_achievement_out" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor:#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="user_achievement" target="output_calendar" parent="1">
+        <mxCell id="flow_achievement_out" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ED7D31;strokeWidth=2;fontSize=10;" edge="1" source="user_achievement" target="output_calendar" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
